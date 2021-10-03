@@ -145,6 +145,7 @@ alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 alias less="less -R"
 alias ..='cd ..'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 
 # ---------------------------------------------------------------------------- #
