@@ -123,6 +123,13 @@ export __GL_YIELD="NOTHING" # Znaczny wzrost FPSów podczas testów, ale może p
 
 
 # ---------------------------------------------------------------------------- #
+#   Wine & Proton
+# ---------------------------------------------------------------------------- #
+
+export PROTON_ENABLE_NVAPI=1 # NVIDIA NVAPI / DLSS Integration
+
+
+# ---------------------------------------------------------------------------- #
 #   Nvidia CUDA
 # ---------------------------------------------------------------------------- #
 # Dokumentacja: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#env-vars
