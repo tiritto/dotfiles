@@ -123,14 +123,7 @@ export __GL_YIELD="NOTHING" # Znaczny wzrost FPSów podczas testów, ale może p
 
 
 # ---------------------------------------------------------------------------- #
-#   Wine & Proton
-# ---------------------------------------------------------------------------- #
-
-export PROTON_ENABLE_NVAPI=1 # NVIDIA NVAPI / DLSS Integration
-
-
-# ---------------------------------------------------------------------------- #
-#   Nvidia CUDA
+#   NVIDIA CUDA
 # ---------------------------------------------------------------------------- #
 # Dokumentacja: https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#env-vars
 
@@ -139,6 +132,13 @@ export CUDA_CACHE_MAXSIZE=$(to_bytes 2Gi) # Domyślnie: 256 Mi, Max: 4Gi
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nvidia/ComputeCache # Domyślnie: ~/.nv/ComputeCache
 
 #nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings
+
+
+# ---------------------------------------------------------------------------- #
+#   Wine & Proton
+# ---------------------------------------------------------------------------- #
+
+export PROTON_ENABLE_NVAPI=1 # NVIDIA NVAPI / DLSS Integration
 
 
 # ---------------------------------------------------------------------------- #
