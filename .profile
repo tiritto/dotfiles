@@ -139,20 +139,7 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nvidia/ComputeCache # Domyślnie: ~/.nv
 # ---------------------------------------------------------------------------- #
 
 export PROTON_ENABLE_NVAPI=1 # NVIDIA NVAPI / DLSS Integration
-
-
-# ---------------------------------------------------------------------------- #
-#   Aliasy
-# ---------------------------------------------------------------------------- #
-
-alias ll='ls --almost-all --color --format=verbose --human-readable --literal --time-style=long-iso'
-alias ls='ls --color=auto -A'
-alias grep='grep --color=auto'
-alias fgrep="fgrep --color=auto"
-alias egrep="egrep --color=auto"
-alias less="less -R"
-alias ..='cd ..'
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+export PROTON_LOG_DIR="$XDG_STATE_HOME"/proton
 
 
 # ---------------------------------------------------------------------------- #
@@ -187,8 +174,8 @@ add_to_path "$DENO_INSTALL"/bin
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 
 # Lokalizacja historii (Bash)
-#export HISTFILE="$XDG_CACHE_HOME"/bash/history
-export HISTFILE="$XDG_STATE_HOME"/bash/history # Rekomendowane przez Arch wiki
+export HISTFILE="$XDG_STATE_HOME"/bash/history
+export BASHCONFIG="$XDG_CONFIG_HOME"/bash/bashrc
 
 # Java / OpenJDK
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
@@ -207,7 +194,6 @@ export CONDARC="$XDG_CONFIG_HOME/conda/condarc"
 
 # wget (wymaga dodatkowego aliasu, aby działał prawidłowo)
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
-alias wget="wget --hsts-file=$XDG_CACHE_HOME/wget-hsts"
 
 # Visual Studio Code
 export VSCODE_PORTABLE="$XDG_DATA_HOME"/vscode
